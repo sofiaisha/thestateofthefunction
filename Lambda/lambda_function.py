@@ -50,6 +50,7 @@ def lambda_handler(event, context):
 
             for index in range(len(output_chunks)):
                 if index < 14:
-                    print('Chunk created ' + index)
+                    print('Chunk created ' +=str(index))
                     #output_chunks[index].export(os.environ['part' + str(index + 1)], format="wav")
+    
     return 'Hello from Lambda'
