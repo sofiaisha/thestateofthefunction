@@ -3,120 +3,120 @@
     {
       "type": "blobTrigger",
       "name": "myBlob",
-      "path": "wav/{name}",
-      "connection": "wavfiles_STORAGE",
+      "path": "voicewavfiles",
+      "connection": "thestateofthefub7d5_STORAGE",
       "direction": "in"
     },
     {
       "type": "blob",
       "name": "inputBlob",
-      "path": "wav/{name}",
-      "connection": "wavfiles_STORAGE",
+      "path": "voicewavfiles/{name}",
+      "connection": "thestateofthefub7d5_STORAGE",
       "direction": "in"
     },
     {
       "type": "blob",
       "name": "part1",
-      "path": "wavfixed/{rand-guid}-part1",
-      "connection": "wavfiles_STORAGE",
+      "path": "voicewavfileschunked/{rand-guid}-part1",
+      "connection": "thestateofthefub7d5_STORAGE",
       "direction": "out"
     },
     {
       "type": "blob",
       "name": "part2",
-      "path": "wavfixed/{rand-guid}-part2",
-      "connection": "wavfiles_STORAGE",
+      "path": "voicewavfileschunked/{rand-guid}-part2",
+      "connection": "thestateofthefub7d5_STORAGE",
       "direction": "out"
     },
     {
       "type": "blob",
       "name": "part3",
-      "path": "outcontainer/{rand-guid}",
-      "connection": "AzureWebJobsDashboard",
+      "path": "voicewavfileschunked/{rand-guid}",
+      "connection": "thestateofthefub7d5_STORAGE",
       "direction": "out"
     },
     {
       "type": "blob",
       "name": "part4",
-      "path": "outcontainer/{rand-guid}",
-      "connection": "AzureWebJobsDashboard",
+      "path": "voicewavfileschunked/{rand-guid}",
+      "connection": "thestateofthefub7d5_STORAGE",
       "direction": "out"
     },
     {
       "type": "blob",
       "name": "part5",
-      "path": "outcontainer/{rand-guid}",
-      "connection": "AzureWebJobsDashboard",
+      "path": "voicewavfileschunked/{rand-guid}",
+      "connection": "thestateofthefub7d5_STORAGE",
       "direction": "out"
     },
     {
       "type": "blob",
       "name": "part6",
-      "path": "outcontainer/{rand-guid}",
-      "connection": "AzureWebJobsDashboard",
+      "path": "voicewavfileschunked/{rand-guid}",
+      "connection": "thestateofthefub7d5_STORAGE",
       "direction": "out"
     },
     {
       "type": "blob",
       "name": "part7",
-      "path": "outcontainer/{rand-guid}",
-      "connection": "AzureWebJobsDashboard",
+      "path": "voicewavfileschunked/{rand-guid}",
+      "connection": "thestateofthefub7d5_STORAGE",
       "direction": "out"
     },
     {
       "type": "blob",
       "name": "part8",
-      "path": "outcontainer/{rand-guid}",
-      "connection": "AzureWebJobsDashboard",
+      "path": "voicewavfileschunked/{rand-guid}",
+      "connection": "thestateofthefub7d5_STORAGE",
       "direction": "out"
     },
     {
       "type": "blob",
       "name": "part9",
-      "path": "outcontainer/{rand-guid}",
-      "connection": "AzureWebJobsDashboard",
+      "path": "voicewavfileschunked/{rand-guid}",
+      "connection": "thestateofthefub7d5_STORAGE",
       "direction": "out"
     },
     {
       "type": "blob",
       "name": "part10",
-      "path": "outcontainer/{rand-guid}",
-      "connection": "AzureWebJobsDashboard",
+      "path": "voicewavfileschunked/{rand-guid}",
+      "connection": "thestateofthefub7d5_STORAGE",
       "direction": "out"
     },
     {
       "type": "blob",
       "name": "part11",
-      "path": "outcontainer/{rand-guid}",
-      "connection": "AzureWebJobsDashboard",
+      "path": "voicewavfileschunked/{rand-guid}",
+      "connection": "thestateofthefub7d5_STORAGE",
       "direction": "out"
     },
     {
       "type": "blob",
       "name": "part12",
-      "path": "outcontainer/{rand-guid}",
-      "connection": "AzureWebJobsDashboard",
+      "path": "voicewavfileschunked/{rand-guid}",
+      "connection": "thestateofthefub7d5_STORAGE",
       "direction": "out"
     },
     {
       "type": "blob",
       "name": "part13",
-      "path": "outcontainer/{rand-guid}",
-      "connection": "AzureWebJobsDashboard",
+      "path": "voicewavfileschunked/{rand-guid}",
+      "connection": "thestateofthefub7d5_STORAGE",
       "direction": "out"
     },
     {
       "type": "blob",
       "name": "part14",
-      "path": "outcontainer/{rand-guid}",
-      "connection": "AzureWebJobsDashboard",
+      "path": "voicewavfileschunked/{rand-guid}",
+      "connection": "thestateofthefub7d5_STORAGE",
       "direction": "out"
     },
     {
       "type": "blob",
       "name": "part15",
-      "path": "outcontainer/{rand-guid}",
-      "connection": "AzureWebJobsDashboard",
+      "path": "voicewavfileschunked/{rand-guid}",
+      "connection": "thestateofthefub7d5_STORAGE",
       "direction": "out"
     }
   ],

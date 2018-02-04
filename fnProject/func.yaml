@@ -1,5 +1,8 @@
 name: voice
-version: 0.0.1
+version: 0.0.7
 runtime: python
-build_image: fnproject/python:2.7.13-dev
 entrypoint: python2 func.py
+build_image: fnproject/python:2.7.13-dev
+config:
+  AWS_ACCESS_KEY_ID: AKIAJAT63M4N322SBXIQ
+  AWS_SECRET_ACCESS_KEY: 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

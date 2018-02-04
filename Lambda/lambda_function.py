@@ -50,7 +50,9 @@ def lambda_handler(event, context):
 
             for index in range(len(output_chunks)):
                 if index < 14:
-                    print('Chunk created ' +=str(index))
-                    #output_chunks[index].export(os.environ['part' + str(index + 1)], format="wav")
-    
-    return 'Hello from Lambda'
+                    print('part' + str(index + 1))
+                    upload_path = '/tmp/{}{}.wav'.format('file', index)
+                    output_chunks[index].export(upload_path, format="wav")
+                    s3_client.upload_file(upload_path, '{}chunked'.format(bucket), '{}-{}'.format(key,index))
+                    
+    return 'Files Processed'
