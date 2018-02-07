@@ -1,3 +1,7 @@
 fnProject/.DS_Store
 Lambda/.DS_Store
 Lambda/pydub/.DS_Store
+.DS_Store
+data/fn.db
+data/fn.mq
+Azure/.DS_Store
