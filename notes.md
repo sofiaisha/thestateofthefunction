@@ -1,6 +1,7 @@
 ## 1. Application level configuration
  
- ```sh
+ ```
+ sh
  fn apps config set myapp LOG_LEVEL debug
  ```
  
@@ -10,6 +11,7 @@
  
  ## 3. Route level configuration
  
- ```sh
- +fn routes config set myapp hello2 LOG_LEVEL info
+ ```
+ sh
+ fn routes config set myapp hello2 LOG_LEVEL info
  ```
