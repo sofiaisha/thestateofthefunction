@@ -64,8 +64,8 @@ obj = json.loads(sys.stdin.read())
 s3_client = boto3.client(
     's3',
     # Hard coded strings as credentials, not recommended.
-    aws_access_key_id='AKIAJAT63M4N322SBXIQ',
-    aws_secret_access_key='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'
+    aws_access_key_id='AKIAJAT63M4N322SdsXIQ',
+    aws_secret_access_key='xVRjzK3gB+NcZupEdsdSvxnlqPt46WXZ8FpR+1VlcLn'
 )
 
 lambda_handler(obj,obj)
