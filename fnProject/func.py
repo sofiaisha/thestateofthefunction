@@ -55,17 +55,14 @@ def lambda_handler(event, context):
     return 'Files Processed'
 
 sys.stderr.write("Starting Function\n")
-
-#print(os.environ["AWS_ACCESS_KEY_ID"])
-#print(os.environ["AWS_SECRET_ACCESS_KEY"])
 obj = json.loads(sys.stdin.read())
 
 # Do not hard code credentials
 s3_client = boto3.client(
     's3',
     # Hard coded strings as credentials, not recommended.
-    aws_access_key_id='AKIAJAT63M4N322SBXIQ',
-    aws_secret_access_key='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'
+    aws_access_key_id= os.environ["AWS_ACCESS_KEY_ID"],
+    aws_secret_access_key=os.environ["AWS_SECRET_ACCESS_KEY"]
 )
 
 lambda_handler(obj,obj)
