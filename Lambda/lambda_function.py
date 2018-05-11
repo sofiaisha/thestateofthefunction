@@ -10,8 +10,6 @@ s3_client = boto3.client('s3')
 
 def lambda_handler(event, context):
 
-    #TODO: How do we get the file into Lambda
-    print('OK function start')
     for record in event['Records']:
         bucket = record['s3']['bucket']['name']
         key = record['s3']['object']['key'] 
